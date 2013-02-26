@@ -15,7 +15,7 @@ require => Package['Xcode46']
   }
 
 file {'/tmp/xcodebuild_license.sh': 
-  source => 'puppet://xcode/xcodebuild_license.sh',
+  source => 'puppet:///modules/xcode/xcodebuild_license.sh',
 require => Package['Xcode46']
 } 
 exec {'exec_coolness': 
